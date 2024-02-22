@@ -50,7 +50,7 @@ body {
         background: hsl(217, 16%, 26%);
     }
 
-    h2 {
+    h1 {
         font-size: 25pt;
         font-weight: 700;
         color: var(--White);
