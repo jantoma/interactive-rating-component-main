@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --main-color-Orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: #7c8798;
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    color: var(--Light-Grey);
+    background: var(--Dark-Blue);
+    transition: all .4s ease-in-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    max-width: 100vw;
+    padding: 2.3rem;
+    border-radius: 25px;
+    background-color: var(--Dark-Blue);
+    background: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    position: relative;
+    text-align: left;
+    transition: all 1.3s ease-in-out;
+
+    .star {
+        padding: 15px;
+        border-radius: 50%;
+        background: hsl(217, 16%, 26%);
+    }
+
+    h2 {
+        font-size: 25pt;
+        font-weight: 700;
+        color: var(--White);
+    }
+
+    p {
+        font-size: 9.5pt;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: .5px;
+        margin-top: -7px;
+        color: var(--Light-Grey);
+    }
+
+    .rating input[type="radio"] {
+        display: none;
+    }
+
+    #ratingBtn:hover,
+    #ratingBtn:active,
+    #ratingBtn:focus {
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, .6), inset 0 0 16px rgba(0, 0, 0, .9);
+        transform: scale(.9) translateY(-.5rem);
+        color: var(--main-color-Orange);
+        background-color: var(--White);
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 12px auto;
+        padding: 15px 0px;
+        border: none;
+
+        label {
+            width: 18px;
+            height: 18px;
+            padding: 15px;
+            margin: 0 auto;
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13pt;
+            border-radius: 50%;
+            background: hsl(217, 16%, 26%);
+            transition: all .2s ease-in-out;
+        }
+
+        label:hover {
+            color: var(--White);
+            background-color: var(--main-color-Orange);
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, .6), inset 0 0 16px rgba(0, 0, 0, .9);
+            transform: scale(1) translateY(-.5rem);
+        }
+    }
+
+    #ratingBtn {
+        padding: 15px 10px;
+        width: 100%;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        font-size: 14pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        outline: none;
+        transition: all .3s ease-in-out;
+        color: var(--White);
+        background-color: var(--main-color-Orange);
+    }
+
+}
+
+/* Page Thanks */
+#thanks {
+    width: 350px;
+    height: 380px;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    img {
+        padding-top: 20px;
+    }
+
+    span {
+        display: inline-block;
+        width: 70%;
+        padding: 10px 20px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15pt;
+        font-weight: 400;
+        line-height: 1.5em;
+        color: var(--main-color-Orange);
+        letter-spacing: 1.5px;
+        background: #38404d;
+        margin-top: 30px;
+        border-radius: 25px;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+
+    p {
+        font-size: 10.75pt;
+        font-weight: 400;
+        line-height: 1.5;
+        padding-bottom: 20px;
+        text-align: center;
+        letter-spacing: .5px;
+        color: var(--Light-Grey);
+    }
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}

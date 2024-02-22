@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 78%, 67%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Rating state start -->
+<main>
+  <section class="card" role="region" aria-labelledby="feedbackHeading">
+    <img src="images/icon-star.svg" class="star" alt="Star icon" />
+
+    <h2 id="feedbackHeading">How did we do?</h2>
+    
+    <p>
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+    </p>
+
+    <form id="ratingForm" role="form" aria-label="Rating Feedback">
+      <fieldset class="rating" role="group" aria-label="Rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5" class="icon">5</label>
+
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4" class="icon">4</label>
+
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3" class="icon">3</label>
+
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2" class="icon">2</label>
+
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1" class="icon">1</label>
+      </fieldset>
+      <button type="button" id="ratingBtn">Submit</button>
+    </form>
+  </section>
+</main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/jantoma" target="_blank">Jan Toma</a>.
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
